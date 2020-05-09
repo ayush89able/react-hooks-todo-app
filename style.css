@@ -1,0 +1,11 @@
+h1, p {
+  font-family: Lato;
+}
+
+.checkBoxDiv{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2.5em;
+}
