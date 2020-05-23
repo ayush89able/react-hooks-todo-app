@@ -64,7 +64,9 @@ export default function TodosApp(){
   `
   useEffect(()=>{
     const raw= localStorage.getItem('data');
-    dispatch({type:'Reset',payload:JSON.parse(raw)})
+    if(raw!==undefined){
+  dispatch({type:'Reset',payload:JSON.parse(raw)})
+    }
   },[])
 
  useEffect(()=>{
