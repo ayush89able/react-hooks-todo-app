@@ -114,15 +114,15 @@ function TodoItem({id,completed,text}){
     <FlexGrid>
     <Box horizontal={{xs:2,sm:2,md:4,lg:6,xl:6}}>
     <FlexGrid.Row>
-    <FlexGrid.Col xs={1} sm={1} md={1} lg={1} xl={1} >
+    <FlexGrid.Col xs={2} sm={1} md={1} lg={1} xl={1} >
     <div className='checkBoxDiv'>
     <input type='checkbox' checked={completed}  onChange={()=>{dispatch({type:'Completed',payload:id})}}/>
     </div>
      </FlexGrid.Col>
-    <FlexGrid.Col xs={10} sm={10} md={10} lg={10} xl={10} >
+    <FlexGrid.Col xs={8} sm={10} md={10} lg={10} xl={10} >
         <Text size="large">{text}</Text>
      </FlexGrid.Col> 
-    <FlexGrid.Col xs={1} sm={1} md={1} lg={1} xl={1} >
+    <FlexGrid.Col xs={2} sm={1} md={1} lg={1} xl={1} >
     <IconButton icon={Delete} onClick={()=>dispatch({type:'Delete',payload:id})} a11yText="Delete" />
     </FlexGrid.Col>
     </FlexGrid.Row>
